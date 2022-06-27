@@ -1,0 +1,16 @@
+.wrapper {
+    font-size: 1.6rem;
+    font-family: 'Roboto', 'Arial', sans-serif;
+
+    margin-top: 32px;
+}
+
+.title {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.contacts {
+    margin: 32px auto;
+    text-align: center;
+}

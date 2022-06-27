@@ -1,0 +1,15 @@
+.wrapper {
+    font-size: 1.6rem;
+    font-family: 'Roboto', 'Arial', sans-serif;
+
+    margin-top: 32px;
+}
+
+.title {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.description {
+    margin: 32px 0;
+}

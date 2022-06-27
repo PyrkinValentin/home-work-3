@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Home</title>
+
+		<meta name="description" content="Description">
+		<meta charset="utf-8"/>
+		<base href="./"> <!--Базовый URL. Не пригодится в реальном проекте-->
+		
+		<!--meta name="viewport" content="width=device-width, initial-scale=1"--> <!--not adaptive-->
+
+		<link rel="shortcut icon" href="favicon.ico">
+
+		<link rel="stylesheet" href="styles/reset.css"/> <!--Reset default styles browser-->
+		<link rel="stylesheet" href="styles/global.css"/> <!--Basic style-->
+		<link rel="stylesheet" href="styles/index.css"/> <!--Module style-->
+ 
+		<!--Предзагрузка локальных файлов шрифтов. Если непредзагрузить будет мерцание текста, что плохо для CLS-->
+		<link rel="preload" href="assets/fonts/KFOmCnqEu92Fr1Mu72xKOzY.woff2" as="font">
+		<link rel="preload" href="assets/fonts/KFOmCnqEu92Fr1Mu5mxKOzY.woff2" as="font">
+		<link rel="preload" href="assets/fonts/KFOmCnqEu92Fr1Mu7GxKOzY.woff2" as="font">
+		<link rel="preload" href="assets/fonts/KFOmCnqEu92Fr1Mu4mxK.woff2" as="font">
+		<link rel="preload" href="assets/fonts/KFOlCnqEu92Fr1MmWUlfCRc4EsA.woff2" as="font">
+		<link rel="preload" href="assets/fonts/KFOlCnqEu92Fr1MmWUlfABc4EsA.woff2" as="font">
+		<link rel="preload" href="assets/fonts/KFOlCnqEu92Fr1MmWUlfChc4EsA.woff2" as="font">
+		<link rel="preload" href="assets/fonts/KFOlCnqEu92Fr1MmWUlfBBc4.woff2" as="font">
+		<link rel="preload" href="assets/fonts/KFOlCnqEu92Fr1MmYUtfCRc4EsA.woff2" as="font">
+		<link rel="preload" href="assets/fonts/KFOlCnqEu92Fr1MmYUtfABc4EsA.woff2" as="font">
+		<link rel="preload" href="assets/fonts/KFOlCnqEu92Fr1MmYUtfChc4EsA.woff2" as="font">
+		<link rel="preload" href="assets/fonts/KFOlCnqEu92Fr1MmYUtfBBc4.woff2" as="font">
+	</head>
+
+	<body class="layout">
+		<header class="header">
+			<a href="index.html">
+				<img class="logo" src="assets/images/logo.png" alt="Logo"/>
+			</a>
+
+			<div class="header__wrapper">
+				<nav>
+					<ul class="header__nav">
+						<li>
+							<a href="index.html" class="header__link">Home</a>
+						</li>
+						<li>
+							<a href="about-me.html" class="header__link">About me</a>
+						</li>
+						<li>
+							<a href="contacts.html" class="header__link">Contacts</a>
+						</li>
+					</ul>
+				</nav>
+
+				<div class="header__contacts">
+					<div class="header__social">
+						<a href="https://vk.com/elementtechguru" target="_blank">
+							<img class="header__social__image" src="assets/images/vk.png" alt="vkontakte">
+						</a>
+					</div>
+					
+					<div>
+						<div class="header__title-tel">Call me, please</div>
+						<a href="tel:+375291015178" class="header__tel">+375 29 101 51 78</a>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<section class="wrapper">
+			<h1 class="title">Personal pronouns</h1>
+			<div class="description">
+				I, you, he, she, it, we they, me, him, her, us, and them are all personal pronouns.
+				Personal pronouns are the stunt doubles of grammar; they stand in for the people (and perhaps animals)
+				who star in our sentences
+			</div>
+			
+			<div class="like">
+				<img class="like__img" src="assets/images/like.png" alt="like">
+				<div id="counter">0</div>
+				<div id="warning"></div>
+			</div>
+					
+			<table class="table">
+				<thead>
+					<tr>
+						<th colspan="3"></th>
+						<th>Субьект</th>
+						<th>Обьект</th>
+					</tr>
+				</thead>
+						
+				<tbody>
+					<tr>
+						<td rowspan="5">Единствен. числ.</td>
+						<td colspan="2" >1 Лицо</td>
+						<td>Я</td>
+						<td>Меня</td>
+					</tr>
+					<tr>
+						<td colspan="2">2 Лицо</td>
+						<td>Ты</td>
+						<td>Тебя</td>
+					</tr>
+					<tr>
+						<td rowspan="3">3 Лицо</td>
+						<td>&#9794;</td>
+						<td>Он</td>
+						<td>Его</td>
+					</tr>
+					<tr>
+						<td>&#9792;</td>
+						<td>Она</td>
+						<td>Ее</td>
+					</tr>
+					<tr>
+						<td>&#9906;</td>
+						<td>Оно</td>
+						<td>Его</td>
+					</tr>
+					<tr>
+						<td rowspan="3">Множ. числ.</td>
+						<td colspan="2">1 Лицо</td>
+						<td>Мы</td>
+						<td>Нас</td>
+					</tr>
+					<tr>
+						<td colspan="2">2 Лицо</td>
+						<td>Вы</td>
+						<td>Вас</td>
+					</tr>
+					<tr>
+						<td colspan="2">3 Лицо</td>
+						<td>Они</td>
+						<td>Их</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+
+		<footer class="footer">
+			<a href="index.html">
+				<img class="logo" src="assets/images/logo.png" alt="Logo"/>
+			</a>
+
+			<nav>
+				<ul class="footer__nav">
+					<li>
+						<a href="index.html" class="footer__link">Home</a>
+					</li>
+					<li>
+						<a href="about-me.html" class="footer__link">About me</a>
+					</li>
+					<li>
+						<a href="contacts.html" class="footer__link">Contacts</a>
+					</li>
+				</ul>
+			</nav>
+		</footer>
+	
+		<script>
+			const elCounter = document.querySelector("#counter");
+			const elWarning = document.querySelector("#warning");
+			
+			let counter = 0;
+			
+			const increment = () => {
+				if(counter >= 2) {
+					elCounter.innerHTML = '';
+					elWarning.innerHTML = 'Хватит тыкать';
+					return
+				};
+				
+				elCounter.innerHTML = ++counter;
+			};
+			
+			document.querySelector(".like__img").addEventListener('click', increment)
+		</script>
+	</body>
+</html>
